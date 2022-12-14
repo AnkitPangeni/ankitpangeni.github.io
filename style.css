@@ -56,6 +56,7 @@ input::placeholder {
   .wrapper{
    
     text-align: center;
+    padding-top:30px;
   }
 
 .wrapper .icon{
