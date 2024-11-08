@@ -1,8 +1,87 @@
-<script src="https://www.paypal.com/sdk/js?client-id=BAAwX3G0oEPW9DuT0x4c_C9tI_f79XB3XfXa60CRjcRhyGLNsh4TuQMoTRbWKUTqmlx9qgqwGervQ7IBHI&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
-<div id="paypal-container-ZA3G3GHKHT4E4"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "ZA3G3GHKHT4E4",
-  }).render("#paypal-container-ZA3G3GHKHT4E4")
-</script>
-n
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #3498db, #2ecc71);
+      color: #333;
+    }
+
+    .payment-container {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 2em;
+      text-align: center;
+      max-width: 450px;
+      width: 100%;
+    }
+
+    /* Style the image */
+    .payment-container img {
+      max-width: 100px; /* Adjust the size as needed */
+      margin-bottom: 1em;
+     
+    }
+
+    .payment-container h1 {
+      font-size: 24px;
+      margin-bottom: 1em;
+      color: #444;
+    }
+
+    .payment-container p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 2em;
+    }
+
+    #paypal-container-ZA3G3GHKHT4E4 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer {
+      margin-top: 2em;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="payment-container">
+    <!-- Add your image here -->
+    <img src="https://www.ankitpangeni.com.np/wp-content/uploads/2022/06/PicsArt_06-26-02.48.39.png" alt="Profile image">
+
+    <h1>Pay for Ankit Pangeni's Services</h1>
+    <p>Secure payment through PayPal</p>
+
+    <!-- PayPal Button Script -->
+    <div id="paypal-container-ZA3G3GHKHT4E4"></div>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAwX3G0oEPW9DuT0x4c_C9tI_f79XB3XfXa60CRjcRhyGLNsh4TuQMoTRbWKUTqmlx9qgqwGervQ7IBHI&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "ZA3G3GHKHT4E4",
+      }).render("#paypal-container-ZA3G3GHKHT4E4");
+    </script>
+
+    <div class="footer">Thank you for choosing my services!</div>
+  </div>
+
+</body>
+</html>
